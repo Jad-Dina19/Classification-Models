@@ -59,7 +59,7 @@ class SVM:
                 grad /= batch_size
                 
                 self.w -= learning_rate * grad
-            print(grad)
+        
     def predict(self, X):
 
         X_bias = np.c_[np.ones([X.shape[0], 1]), X]
